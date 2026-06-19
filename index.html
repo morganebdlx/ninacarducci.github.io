@@ -22,15 +22,17 @@
   <meta name="twitter:image" content="/assets/images/nina.webp">
 
   <script type="application/ld+json">
-  [
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Nina Carducci Photographie",
       "description": "Photographe professionnelle à Bordeaux, spécialisée dans les portraits, mariages, concerts et événements d'entreprise.",
       "url": "https://ninacarducci.github.io",
       "telephone": "+33556677889",
       "email": "nina.carducci@email.fr",
+      "image": "https://ninacarducci.github.io/assets/images/nina.webp",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "68 avenue Alsace-Lorraine",
@@ -38,28 +40,34 @@
         "postalCode": "33200",
         "addressCountry": "FR"
       },
-      "openingHours": "Mo-Sa 10:00-19:00",
-      "image": "https://ninacarducci.github.io/assets/images/nina.webp",
-      "sameAs": [
-        "https://www.instagram.com/ninacarducci.photo/?hl=fr"
-      ]
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "10:00",
+          "closes": "19:30"
+        }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Nina Carducci"
+      },
+      "sameAs": ["https://www.instagram.com/ninacarducci.photo/?hl=fr"]
     },
     {
-      "@context": "https://schema.org",
       "@type": "Person",
       "name": "Nina Carducci",
       "jobTitle": "Photographe professionnelle",
       "url": "https://ninacarducci.github.io",
       "image": "https://ninacarducci.github.io/assets/images/nina.webp",
-      "sameAs": [
-        "https://www.instagram.com/ninacarducci.photo/?hl=fr"
-      ]
+      "sameAs": ["https://www.instagram.com/ninacarducci.photo/?hl=fr"]
     }
   ]
-  </script>
+}
+</script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/style-minifier.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
@@ -119,9 +127,9 @@
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
 		<p class="about-me__introduction">
-      Devenir photographe était pour moi une évidence.
-      Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation,
-      un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
+      Devenir photographe était pour moi une évidence. Photographe professionnelle
+    basée à Bordeaux, je capture portraits, mariages, concerts et événements
+    d'entreprise avec une approche authentique et personnalisée.</p>
 
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
@@ -131,7 +139,7 @@
 
     <!-- section galerie -->
 <section id="gallery">
-	<h2 class="title">Portfolio</h2>
+	<h2 class="title">Portfolio de photographies</h2>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
 			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Photo de concert"/>
@@ -162,13 +170,13 @@
 
     <!-- section services -->
 <section id="services">
-	<h2 class="title">Mes services</h2>
+	<h2 class="title">Mes services de photographie</h2>
 
   <div class="container">
 
     <article class="service">
 			<div class="service__description">
-				<h3>Shooting photo</h3>
+				<h3>Shooting photo : portraits, mariages & événements</h3>
 				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 			</div>
 			<div class="service__price">
@@ -215,7 +223,7 @@
 <section id="contact">
 	<div class="container">
 		<div class="form-container">
-			<h2>Une question ? Une demande de devis ?</h2>
+			<h2>Une question ? Une demande de devis à votre photographe?</h2>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form method="post">
 				<label for="nom">Nom</label>
