@@ -90,9 +90,7 @@ body {
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
+
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -241,8 +239,21 @@ form textarea {
 }
 input[type="submit"] {
 	background-color: #BEB45A;
-	padding: .5em 1em
+  color: #1a1a1a;
+  padding: .5em 1em;
 }
+
+input[type="submit"]:hover {
+  background-color: #1C6474;
+  color: white;
+  cursor: pointer;
+}
+
+form input,
+form textarea {
+  background-color: rgba(255, 255, 255, 0.774);
+}
+
 
 footer {
   background-color: #1C6474;
@@ -250,7 +261,7 @@ footer {
   padding-inline: 100px;
   padding-block: 50px;
   font-family: 'Inter';
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .footer-content {
@@ -263,7 +274,7 @@ footer {
 }
 
 .footer-contact h2 {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   color: white;
@@ -304,7 +315,7 @@ footer {
 
 .footer-copyright {
   text-align: center;
-  font-size: 11px;
+  font-size: 13px;
   color: white;
   margin-bottom: 0;
 }
