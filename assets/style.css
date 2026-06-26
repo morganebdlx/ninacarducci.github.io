@@ -117,6 +117,9 @@ body {
 	padding-bottom: 100%;
 
 }
+.color-span {
+  color: black;
+}
 .gallery-item {
 	position: absolute;
 	width: 100%;
@@ -311,6 +314,7 @@ footer {
 .footer-social img {
   width: 20px;
   height: 20px;
+  filter: brightness(0) invert(1);
 }
 
 .footer-copyright {
